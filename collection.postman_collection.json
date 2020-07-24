@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "8e186a72-0f14-4592-b676-04d6f40fb412",
+		"name": "Test Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a new dog breed ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dog-breeds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dog-breeds"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a new dog breed ",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/dog-breeds",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"dog-breeds"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "187"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"bb-vBsQt+xC8CRFdlMyCCI9QkEVpQA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Jul 2020 20:47:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"_id\": \"5f1b48f82578074667c2c23a\",\n        \"name\": \"deerhound scottish\",\n        \"location\": \"https://waltermanias-breeds-repository.s3-sa-east-1.amazonaws.com/n02092002_15010.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get dog breed by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dog-breeds/5f1b4402db5f8a3eb20b6c7e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dog-breeds",
+						"5f1b4402db5f8a3eb20b6c7e"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get dog breed by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/dog-breeds/5f1b4402db5f8a3eb20b6c7e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"dog-breeds",
+								"5f1b4402db5f8a3eb20b6c7e"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"af-nFLOx7+zX3DO8uSdeadSqIs+oQE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Jul 2020 20:33:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"_id\": \"5f1b4402db5f8a3eb20b6c7e\",\n        \"name\": \"cotondetulear\",\n        \"location\": \"https://waltermanias-breeds-repository.s3-sa-east-1.amazonaws.com/IMAG1063.jpg\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get dog breeds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dog-breeds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dog-breeds"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get dog breeds",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/dog-breeds",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"dog-breeds"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "169"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a9-1q2Nh4Gb/nNQYGJnedQ4rsPTg3M\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Jul 2020 20:44:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": [\n        {\n            \"_id\": \"5f1b4823d1e7794532538008\",\n            \"name\": \"shiba\",\n            \"location\": \"https://waltermanias-breeds-repository.s3.sa-east-1.amazonaws.com/shiba-15.jpg\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete dog breed",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dog-breeds/5f1b48f82578074667c2c23a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dog-breeds",
+						"5f1b48f82578074667c2c23a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete dog breed",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/dog-breeds/5f1b48f82578074667c2c23a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"dog-breeds",
+								"5f1b48f82578074667c2c23a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-MQbkQkH2en4zbAe51Eu/dtX5Lko\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Jul 2020 20:47:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"data\": {\n        \"message\": \"Ok\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
